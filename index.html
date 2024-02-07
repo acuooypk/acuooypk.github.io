@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript 粉红公主的新年抽奖</title>
+<title>粉红公主的新年抽奖</title>
 <style>
     body{
         background-color: #2c9afc;
@@ -83,7 +83,7 @@
             <li><img src="images/2.png"/><div class="mask"></div></li>
             <li><img src="images/3.png"/><div class="mask"></div></li>
             <li><img src="images/4.png"/><div class="mask"></div></li>
-            <span id="startbutton" onclick="startlottery()" style="background-color:#ff3a59;color:white;font-size: 20px;">开始抽奖</span>
+            <span id="startbutton" onclick="startlottery()" style="background-color:#ff3a59;color:white;font-size: 20px;">公主大人请点我</span>
             <li><img src="images/5.png"/><div class="mask"></div></li>
             <li><img src="images/6.png"/><div class="mask"></div></li>
             <li><img src="images/7.png"/><div class="mask"></div></li>
@@ -156,21 +156,21 @@
             if( i >= rNum+num){//当i大于转rNum加随机数字num次计时器结束，出现提示框提示中奖信息
 
                 if (num==1) {
-                   message.innerHTML="恭喜你中了耳机";
+                   message.innerHTML="奖励一个奥利奥";
                 }else if(num==2){
-                   message.innerHTML="恭喜你中了iPad";
+                   message.innerHTML="奖励一根胸毛";
                 }else if(num==3){
                    message.innerHTML="感谢参与";
                 }else if(num==4){
-                   message.innerHTML="恭喜你中了洋娃娃";
+                   message.innerHTML="奖励一个520";
                 }else if(num==5){
-                   message.innerHTML="恭喜你中了红色鞋子";
+                   message.innerHTML="恭奖励苹果手表";
                 }else if(num==6){
-                   message.innerHTML="恭喜你中了白色手机";
+                   message.innerHTML="恭奖励一个亲亲";
                 }else if(num==7){
-                   message.innerHTML="恭喜你中了黑色手机";
+                   message.innerHTML="恭奖励一个抱抱";
                 }else if(num==8){
-                   message.innerHTML="恭喜你中了蓝色鞋子";
+                   message.innerHTML="恭奖励一包泡面";
                 }
 
                 var timer2 = null;
