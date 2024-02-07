@@ -138,13 +138,19 @@
 				return 'rgb(' + random(250) + ', ' + random(250) + ', ' + random(250) + ')';
 			};
 
-			var list = new Array(12).fill(0).map(function(o, i) {
-				return {
-					title: '冯艺淼的' + i + '坨奥里给',
-					color: randomColor()
-				};
-			});
-
+			var list = new Array(12)
+			list[0] = "粉红公主的奥里给";
+			list[1] = "粉红公主的胸毛";			
+			list[2] = "冯艺淼的头发";
+			list[3] = "冯艺淼的亲亲";
+			list[4] = "一毛钱";
+			list[5] = "新年祝福";
+			list[6] = "冯艺淼";
+			list[7] = "冯艺淼的胸毛";
+			list[8] = "冯艺淼的胸毛";
+			list[9] = "冯艺淼的胸毛";
+			list[10] = "冯艺淼的胸毛";
+			list[10] = "冯艺淼的胸毛";
 			var perAngle = 360 / list.length;
 
 			var main = document.querySelector('.main');
@@ -155,6 +161,7 @@
 
 				var newNode = temp.cloneNode(true);
 				newNode.style.display = 'block';
+				newNode.style.font-size = 5;
 				newNode.style.transform = 'rotateZ(' + (perAngle * i + perAngle / 2) + 'deg)';
 				newNode.querySelector('.bg').style.background = item.color;
 
