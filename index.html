@@ -138,21 +138,12 @@
 				return 'rgb(' + random(250) + ', ' + random(250) + ', ' + random(250) + ')';
 			};
 
-			var list = new Array(
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给",
-				"粉红公主的奥里给"
-				
-			);
+			var list = new Array(12).fill(0).map(function(o, i) {
+				return {
+					title: '冯一喵好美,冯一喵好美',
+					color: randomColor()
+				};
+			});
 			var perAngle = 360 / list.length;
 
 			var main = document.querySelector('.main');
@@ -163,7 +154,7 @@
 
 				var newNode = temp.cloneNode(true);
 				newNode.style.display = 'block';
-
+				newNode.style.fontsize = 5;
 				newNode.style.transform = 'rotateZ(' + (perAngle * i + perAngle / 2) + 'deg)';
 				newNode.querySelector('.bg').style.background = item.color;
 
